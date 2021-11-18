@@ -3,27 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahazim <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: ahazim <ahazim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 19:49:47 by ahazim            #+#    #+#             */
-/*   Updated: 2021/11/13 00:22:54 by ahazim           ###   ########.fr       */
+/*   Updated: 2021/11/18 18:06:38 by ahazim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
-#include<stdlib.h>
-
-static size_t	ft_strlen(char	*s)
-{
-	int	count;
-
-	count = 0;
-	while (s[count] != '\0')
-	{
-		count++;
-	}
-	return (count);
-}
+#include"libft.h"
 
 char	*ft_strdup(const char *s1)
 {

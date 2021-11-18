@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahazim <ahazim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/08 13:29:12 by ahazim            #+#    #+#             */
-/*   Updated: 2021/11/15 01:33:18 by ahazim           ###   ########.fr       */
+/*   Created: 2021/11/18 20:27:41 by ahazim            #+#    #+#             */
+/*   Updated: 2021/11/18 20:27:52 by ahazim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
+#include"libft.h"
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
@@ -31,4 +31,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-	

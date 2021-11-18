@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahazim <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: ahazim <ahazim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 20:02:53 by ahazim            #+#    #+#             */
-/*   Updated: 2021/11/13 00:22:32 by ahazim           ###   ########.fr       */
+/*   Updated: 2021/11/18 20:46:06 by ahazim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
+#include"libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
@@ -37,5 +37,5 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 			count++;
 		}
 	}
-	return ((void *)dst);
+	return (dst);
 }
