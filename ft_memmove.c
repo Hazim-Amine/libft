@@ -6,7 +6,7 @@
 /*   By: ahazim <ahazim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 20:02:53 by ahazim            #+#    #+#             */
-/*   Updated: 2021/11/18 20:46:06 by ahazim           ###   ########.fr       */
+/*   Updated: 2021/11/20 15:31:14 by ahazim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	count = 0;
 	if ((char *)dst == NULL && (const char *)src == NULL)
 	{
-		return (0);
+		return (NULL);
 	}
 	if (dst > src)
 	{
@@ -31,7 +31,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	else
 	{
-		while (count < len - 1)
+		while (count < len)
 		{
 			(((char *)dst)[count]) = (((const char *)src)[count]);
 			count++;

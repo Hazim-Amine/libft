@@ -6,7 +6,7 @@
 #    By: ahazim <ahazim@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/04 20:37:13 by ahazim            #+#    #+#              #
-#    Updated: 2021/11/18 20:03:34 by ahazim           ###   ########.fr        #
+#    Updated: 2021/11/21 19:54:34 by ahazim           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,7 +48,8 @@ SRC =   ft_memset.c     \
 		ft_putendl_fd.c	\
 		ft_putnbr_fd.c	\
 		ft_strmapi.c	\
-		
+		ft_striteri.c	\
+		ft_itoa.c		\
 
 
 OBJECTS = $(SRC:.c=.o)

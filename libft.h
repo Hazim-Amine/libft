@@ -6,7 +6,7 @@
 /*   By: ahazim <ahazim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 19:12:51 by ahazim            #+#    #+#             */
-/*   Updated: 2021/11/18 20:18:59 by ahazim           ###   ########.fr       */
+/*   Updated: 2021/11/20 15:08:52 by ahazim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,5 +48,7 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+char	*ft_itoa(int n);
 
 #endif

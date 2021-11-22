@@ -6,7 +6,7 @@
 /*   By: ahazim <ahazim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 13:21:30 by ahazim            #+#    #+#             */
-/*   Updated: 2021/11/18 18:07:12 by ahazim           ###   ########.fr       */
+/*   Updated: 2021/11/20 20:15:46 by ahazim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,15 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t	index;
 
 	count = 0;
-	index = 0;
 	if (needle[0] == '\0')
 	{
 		return ((char *)haystack);
 	}
-	while (haystack[count] != '\0' && count < len - 1)
+	while (haystack[count] != '\0' && count < len)
 	{
-		while (haystack[count] == needle[index])
+		index = 0;
+		while (haystack[count + index] == needle[index]
+			&& (count + index) < len)
 		{
 			if (needle[index + 1] == '\0')
 				return (&((char *)haystack)[count]);
