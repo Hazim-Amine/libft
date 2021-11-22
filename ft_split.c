@@ -6,27 +6,15 @@
 /*   By: ahazim <ahazim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 20:54:17 by ahazim            #+#    #+#             */
-/*   Updated: 2021/11/21 23:23:23 by ahazim           ###   ########.fr       */
+/*   Updated: 2021/11/22 11:58:53 by ahazim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 
-static ft_free(char *arr)
-{
-	int	count;
-
-	count = 0;
-	while (arr[count])
-	{
-		free(arr[count]);
-		count++;
-	}
-	free(arr);
-}
 static void	ft_clear(char	*str)
 {
-	size_t	count;
+	int	count;
 
 	count = 0;
 	while (str[count] != '\0')
