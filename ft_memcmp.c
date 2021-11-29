@@ -6,7 +6,7 @@
 /*   By: ahazim <ahazim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 14:23:04 by ahazim            #+#    #+#             */
-/*   Updated: 2021/11/18 18:06:13 by ahazim           ###   ########.fr       */
+/*   Updated: 2021/11/28 03:27:37 by ahazim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	unsigned int	count;
+	size_t	count;
 
 	count = 0;
 	if (n == 0)

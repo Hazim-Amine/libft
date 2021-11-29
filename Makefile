@@ -6,14 +6,14 @@
 #    By: ahazim <ahazim@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/04 20:37:13 by ahazim            #+#    #+#              #
-#    Updated: 2021/11/21 19:54:34 by ahazim           ###   ########.fr        #
+#    Updated: 2021/11/27 19:57:41 by ahazim           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
 NAME = libft.a
 
-CC = gcc
+CC = cc
 
 CFLAGS = -Wall -Wextra -Werror
 
@@ -50,7 +50,7 @@ SRC =   ft_memset.c     \
 		ft_strmapi.c	\
 		ft_striteri.c	\
 		ft_itoa.c		\
-
+		ft_split.c		\
 
 OBJECTS = $(SRC:.c=.o)
 
@@ -58,11 +58,11 @@ INCLUDES = libft.h \
 
 all: $(NAME)
 
-$(NAME): $(OBJECTS) $(INCLUDES)
-	ar rcs $(NAME) $(OBJECTS)
+$(NAME):$(OBJECTS) $(INCLUDES)
+	 ar rc $(NAME) $(OBJECTS)
 
 %.o : %.c
-	$(CC) $(CFLAGS) -o $@ -c $<
+	$(CC) $(CFLAGS) -c $<
 
 clean:
 	rm -rf $(OBJECTS)

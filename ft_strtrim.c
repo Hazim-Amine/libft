@@ -6,7 +6,7 @@
 /*   By: ahazim <ahazim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 20:48:59 by ahazim            #+#    #+#             */
-/*   Updated: 2021/11/18 20:23:32 by ahazim           ###   ########.fr       */
+/*   Updated: 2021/11/22 22:44:09 by ahazim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	*ft_strtrim(char const *s, char const *set)
 			start++;
 		while (s[end - 1] && ft_strrchr(set, s[end - 1]) && end > start)
 			end--;
-		cpy = malloc (end - start + 1);
+		cpy = (char *)malloc (sizeof(char) * (end - start + 1));
 		if (cpy)
 			ft_strlcpy(cpy, &s[start], end - start + 1);
 	}

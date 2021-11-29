@@ -6,7 +6,7 @@
 /*   By: ahazim <ahazim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 20:27:41 by ahazim            #+#    #+#             */
-/*   Updated: 2021/11/18 20:27:52 by ahazim           ###   ########.fr       */
+/*   Updated: 2021/11/28 20:06:43 by ahazim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	unsigned int	count;
-	unsigned int	count1;
+	size_t	count;
+	size_t	count1;
 
 	count = 0;
 	count1 = 0;

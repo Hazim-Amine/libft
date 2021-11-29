@@ -6,7 +6,7 @@
 /*   By: ahazim <ahazim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/20 15:07:26 by ahazim            #+#    #+#             */
-/*   Updated: 2021/11/21 20:55:18 by ahazim           ###   ########.fr       */
+/*   Updated: 2021/11/25 02:39:20 by ahazim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,7 @@ static size_t	ft_len(int index)
 
 	len = 0;
 	if (index <= 0)
-	{
 		len++;
-	}
 	while (index != 0)
 	{
 		len++;
@@ -47,12 +45,17 @@ char	*ft_itoa(int n)
 	}
 	if (index == 0)
 		str[0] = '0';
-	str[len--] = '\0';
+	str[len] = '\0';
 	while (index != 0)
 	{
-		str[len] = index % 10 + '0';
 		len--;
+		str[len] = index % 10 + '0';
 		index = index / 10;
 	}
 	return (str);
 }
+// int main()
+// {
+// 	int c = 0;
+// 	printf("%s", ft_itoa(c));
+// }

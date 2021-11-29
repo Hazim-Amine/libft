@@ -6,7 +6,7 @@
 /*   By: ahazim <ahazim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 21:20:14 by ahazim            #+#    #+#             */
-/*   Updated: 2021/11/18 20:16:21 by ahazim           ###   ########.fr       */
+/*   Updated: 2021/11/29 01:21:14 by ahazim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	unsigned long int	count;
-
-	count = 0;
 	if (s)
 	{
 		while (*s)

@@ -6,7 +6,7 @@
 /*   By: ahazim <ahazim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 19:12:51 by ahazim            #+#    #+#             */
-/*   Updated: 2021/11/20 15:08:52 by ahazim           ###   ########.fr       */
+/*   Updated: 2021/11/27 19:38:26 by ahazim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include <sys/stat.h>
+# include <fcntl.h>
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
@@ -49,6 +51,8 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+char	*ft_substr(const char *s, unsigned int start, size_t len);
 char	*ft_itoa(int n);
+char	**ft_split(char const *s, char c);
 
 #endif
