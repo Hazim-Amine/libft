@@ -6,7 +6,7 @@
 /*   By: ahazim <ahazim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 20:54:17 by ahazim            #+#    #+#             */
-/*   Updated: 2021/11/29 02:17:41 by ahazim           ###   ########.fr       */
+/*   Updated: 2021/12/02 09:49:36 by ahazim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,6 +97,3 @@ char	**ft_split(char const *s, char c)
 	p[len] = NULL;
 	return (p);
 }
-// len = chhal fiha mn kelma
-// static = kayna f ram
-// fach kendiro static function khasha tmchi l static 

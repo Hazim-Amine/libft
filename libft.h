@@ -6,12 +6,12 @@
 /*   By: ahazim <ahazim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 19:12:51 by ahazim            #+#    #+#             */
-/*   Updated: 2021/11/27 19:38:26 by ahazim           ###   ########.fr       */
+/*   Updated: 2021/11/29 22:39:33 by ahazim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+// #ifndef LIBFT_H
+// # define LIBFT_H
 
 # include <stdio.h>
 # include <string.h>
@@ -55,4 +55,4 @@ char	*ft_substr(const char *s, unsigned int start, size_t len);
 char	*ft_itoa(int n);
 char	**ft_split(char const *s, char c);
 
-#endif
+// #endif
