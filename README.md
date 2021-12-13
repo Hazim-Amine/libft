@@ -1,2 +1,4 @@
-# libft-
-42 first project
+# libft
+Creating you own library
+
+Summary: This project aims to code a C library regrouping usual functions that you’ll be use for all your next projects.
